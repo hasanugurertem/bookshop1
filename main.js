@@ -78,6 +78,7 @@ const createBookItemsHtml = () => {
          </div>
          <button class="btn-purple" onclick="adBookToBasket(${
            book.id
+           
          })">Sepete Ekle</button>
        </div>
      </div>
