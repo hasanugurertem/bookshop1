@@ -21,7 +21,6 @@
   margin-left: 0%;
   margin-top: 0%;
   margin-bottom: 2%;
-
 }
 .title {
   font-weight: bold;
@@ -34,6 +33,8 @@
   font-size: 20px;
   color: var(--gray);
   cursor: pointer;
+  margin-left: -20px;
+  justify-content: center; 
 }
 .menu .active {
   color: var(--black);
@@ -41,7 +42,7 @@
 }
 .menu li,
 .menu-icons li {
-  margin: 0 10px;
+  margin: 10px;
 }
 .menu-icons li {
   color: var(--black);
@@ -119,14 +120,15 @@
 }
 .btn-purple{
   cursor: pointer;
-  border: 2px solid #4682B4;
+  border: 2px solid white;
+  border-radius: 20px; /* Köşeleri ovalleştirmek için border-radius değerini artırın */
   font-size: 1rem;
   font-weight: bold;
   background-color: #0d1f61;
-  ;
   transition: all 250ms ease-in-out;
   padding: 5px 0;
 }
+
 .btn-purple:hover{
   background-color: #4682B4;
   color: white;
@@ -273,3 +275,49 @@
 .total-price:empty + .btn-purple{
   display: none;
 }
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 10;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px; /* Logo boyutunu ayarlayın */
+}
+
+.title {
+  color: white;
+  margin-left: 5px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-icons li {
+  margin-left: 25px;
+  cursor: pointer;
+}
+.btn-purple {
+  color: white;
+}
+
